@@ -1,0 +1,23 @@
+<div class="modal-body">
+    <h2>{{actionType}} employee detail</h2>
+    <form [formGroup]="employeeForm" (ngSubmit)="save(selectedEmployee.id)">
+        <div class="input-row">
+            <label for="name">Name: </label>
+            <input class="form-control" id="name" type="text" formControlName="employeeName">
+        </div>
+        <div class="input-row">
+            <label for="email">Email: </label>
+            <input class="form-control" id="email" type="text" formControlName="email">
+        </div>
+        <div class="input-row">
+            <label for="phone">Phone number: </label>
+            <input class="form-control" id="phone" type="text" formControlName="phoneNumber">
+        </div>
+        <div class="input-row">
+            <label for="job">Job title: </label>
+            <input class="form-control" id="job" type="text" formControlName="jobTitle">
+        </div>
+
+        <input type="submit" value="save" class="btn btn-lg btn-outline-primary mt-3">
+    </form>
+</div>
